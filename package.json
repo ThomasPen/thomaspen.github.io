@@ -1,9 +1,12 @@
 {
   "name": "fcc-mongo-mongoose-challenges",
   "version": "0.0.1",
+  "homepage": "https://thomaspen.github.io/",
   "description": "A boilerplate project",
   "main": "server.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server.js"
   },
   "dependencies": {
@@ -21,5 +24,8 @@
     "mongoose",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }
